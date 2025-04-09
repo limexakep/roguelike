@@ -4,7 +4,7 @@ class Character():
         self.health = max_health
         self.strong = strong
         self.armor = armor
-        self.current_health = max_health
+        self.current_health = 100
 
     def attack(self, target):
         target.current_health -= self.strong * ((100 - target.armor) / 100)
